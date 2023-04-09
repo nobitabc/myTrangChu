@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .google-map {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .google-map iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        #list-products .item {
+            width: 290px;
+            height: 374px;
+            margin-bottom: 50px;
+        }
+    
+        .hinhanh{
+            display: flex;
+            height: 20rem;
+            gap:1 rem
+
+        }
+        .hinhanh >div {
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+        }
+        .hinhanh >div:hover{
+            flex: 5;
+        }
+        @media all and (min-width: 240px){     
+  #menu .item{
+  display: none;
+        } 
+        #menusmalls{
+    display: block;
+}
+
+}
+   @media all and (min-width:576px){
+#menusmalls{
+    display: none;
+}
+#menu .item{
+    display: block;
+}
+   }
+ 
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" width="100px" alt="">
+            </a>
+            <div id="leftMenu">
+                <a href="#" class="btn" onclick="closeBtn()">X</a>
+                <nav class="leftNav">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="">Sản phẩm</a>
+                    <a href="tintuc.html">Tin tức</a>
+                    <a href="lienhe.html">Liên hệ</a>
+                </nav>
+            </div>
+        
+                <div id="menu">
+                        <div class="item">
+                            <a href="index.html">Trang chủ</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Sản phẩm</a>
+                        </div>
+                        <div class="item">
+                            <a href="tintuc.html">Blog</a>
+                        </div>
+                        <div class="item">
+                            <a href="lienhe.html">Liên hệ</a>
+                        </div>
+                    </div>
+                    <span class="menu" onclick="openBtn()" id="menusmalls"><i class="fa fa-bars"  style="font-size:24px"> </i></span>
+
+            </div>
+        
+                   
+           
+                    <div id="banner">
+                        <div class="box-left">
+                            <h2>
+                                <span>DU LỊCH</span>
+                                <br>
+                                <span>VIỆT NAM</span>
+                            </h2>
+                            <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng
+                                hợp vệ sinh đến người dùng,phục vụ người dùng 1 cái
+                                hoàn hảo nhất</p>
+                            <button>Mua ngay</button>
+                            </div>
+                    </div>
+                    <div id="wp-products"> 
+                        <h2>Liên Hệ</h2>
+                    </div>
+        <div class="google-map">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.443197063659!2d106.70077808692803!3d10.777327837661332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fe2c648062d%3A0x9581d8b039995a96!2sVietnam%20Travel%20Group!5e0!3m2!1sen!2s!4v1680686522740!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      <div id="wp-products">
+        <h2>Hình ảnh Việt Nam</h2>
+      </div>
+        <div  class="backgroundhinh">
+            
+           <div class="hinhanh">
+            <div style="background-image: url(assets/hinhanh1.png);"></div>
+            <div style="background-image: url(assets/hinhanh2.png);"></div>
+            <div style="background-image: url(assets/hinhanh3.png);"></div>
+            <div style="background-image: url(assets/hinhanh4.png);"></div>
+            <div style="background-image: url(assets/hinhanh5.png);"></div>
+
+           </div>
+      
+        
+                  
+                
+
+        </div>
+
+        <div>
+            <h2>THÔNG TIN LIÊN HỆ </h2>
+           <br>
+           Hệ thống cửa hàng
+           <br>
+           285/26 Cách mạng tháng 8, Phường 12, Q.10, TPHCM
+           <br>
+           Điện thoại: 090.990.4560 - 028 7300 0274
+           <br>
+           Liên hệ Phân phối hàng hóa/Sỉ 090.990.2100 - ZALO(11AM-7PM) - P.M Bici
+           <br>
+           Liên hệ Hợp tác Marketing/Nhãn hàng 088 99999 81 - ttbao2607@gmail.com - Mr. Bảo
+           <br>
+       </div>
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="trangchu.html">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Blog</a>
+                    </div>
+                    <div class="item">
+                        <a href="lienhe.html">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  <script> 
+    function openBtn(){
+        document.getElementById("leftMenu").style.width = "150px";
+    }
+    function closeBtn(){
+        document.getElementById("leftMenu").style.width = "0";
+    }
+                        </script>
+</body>
+
+</html>
